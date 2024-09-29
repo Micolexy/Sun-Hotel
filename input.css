@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#header {
+    background-image: url('../home-img/homepage-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#room-header {
+    background-image: url('../room-img/room-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#facilities-header {
+    background-image: url('../facilities-img/facilities-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#contact-header {
+    background-image: url('../contact-img/contact-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    background-image: url('../home-img/home-contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+}
+

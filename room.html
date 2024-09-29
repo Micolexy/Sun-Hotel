@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Rooms</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section id="room-header" class=" ">
+      <div class="mx-auto px-3 md:px-8 py-6">
+        <div class="flex items-center justify-between mb-16 md:mb-28">
+          <!-- logo -->
+          <img src="home-img/headed-logo.png" alt="" />
+          <button
+            class="bg-white px-7 py-4 rounded-lg tracking-widest font-sans font-bold hover:bg-darkBrown hover:text-white"
+          >
+            BOOK NOW
+          </button>
+        </div>
+        <!-- contexts on header -->
+        <div
+          class="flex flex-col lg:flex-row items-center space-y-10 lg:space-y-0 justify-between mb-28 lg:mb-36"
+        >
+          <!-- social -->
+          <div
+            class="flex lg:flex-col items-center space-x-10 lg:space-x-0 lg:space-y-6"
+          >
+            <a
+              href="#"
+              class="ring-2 ring-white rounded-full p-3 px-4 hover:bg-blue-400"
+            >
+              <img src="home-img/facebook-icon.png" class="w-3" alt="" />
+            </a>
+            <a
+              href="#"
+              class="ring-2 ring-white rounded-full p-4 px-4 hover:bg-red-400"
+            >
+              <img src="home-img/instagram-icon.png" class="w-3" alt="" />
+            </a>
+          </div>
+          <!-- content -->
+          <div class="flex space-x-10 md:space-x-24 items-center">
+            <div class="flex flex-col items-center space-y-2">
+              <p class="text-white text-xl  font-mono">explore</p>
+              <h2
+                class="text-white text-3xl lg:text-7xl font-medium font-serif"
+              >
+                ROOMS & SUITES
+              </h2>
+            </div>
+          </div>
+          <!-- menu -->
+          <div
+            class="flex flex-col md:flex-row lg:flex-col md:space-x-10 md:space-y-0 lg:space-x-0 lg:space-y-4 font-sans items-center space-y-4 uppercase text-white"
+          >
+            <!-- home menu -->
+            <div class="group flex items-center space-x-2">
+              <a
+                href="index.html"
+                class="text-black group-hover:font-bold tracking-widest"
+                >home</a
+              >
+              <img
+                src="home-img/Ellipse 2.png"
+                alt=""
+                class="group-hover:bg-black rounded-full cursor-pointer"
+              />
+            </div>
+            <!-- room menu -->
+            <div class="group flex items-center space-x-2">
+              <a
+                href="room.html"
+                class="text-black group-hover:font-bold tracking-widest"
+                >rooms</a
+              >
+              <img
+                src="home-img/Ellipse 2.png"
+                alt=""
+                class="group-hover:bg-black rounded-full cursor-pointer"
+              />
+            </div>
+            <!-- about menu -->
+            <div class="group flex items-center space-x-2">
+              <a
+                href="#about"
+                class="text-black group-hover:font-bold tracking-widest"
+                >about</a
+              >
+              <img
+                src="home-img/Ellipse 2.png"
+                alt=""
+                class="group-hover:bg-black rounded-full cursor-pointer"
+              />
+            </div>
+            <!-- facilities menu -->
+            <div class="group flex items-center space-x-2">
+              <a
+                href="facilities.html"
+                class="text-black group-hover:font-bold tracking-widest"
+                >facilities</a
+              >
+              <img
+                src="home-img/Ellipse 2.png"
+                alt=""
+                class="group-hover:bg-black rounded-full cursor-pointer"
+              />
+            </div>
+            <!-- contact menu -->
+            <div class="group flex items-center space-x-2">
+              <a
+                href="contact.html"
+                class="text-black group-hover:font-bold tracking-widest"
+                >contact</a
+              >
+              <img
+                src="home-img/Ellipse 2.png"
+                alt=""
+                class="group-hover:bg-black rounded-full cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:flex items-end justify-end cursor-pointer">
+          <img src="room-img/scrool-btn-room.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- room section -->
+    <section id="rooms" class="py-10 bg-textWhite">
+     <div class="mx-auto px-6">
+      <!-- selections -->
+       <div class="md:w-1/2 mx-auto mb-10 flex items-center text-start justify-between border border-gray-800">
+        <!-- type -->
+        <a href="#" class=" flex space-x-5 p-3 items-center border-r border-gray-500">
+          <p class="opacity-60 ">Type</p>
+          <img src="room-img/down-icon.png" alt="">
+        </a>
+        <!-- space -->
+        <a href="#" class=" flex space-x-5 p-3 items-center border-r border-gray-500">
+          <p class="opacity-60">Space</p>
+          <img src="room-img/down-icon.png" alt="">
+        </a>
+        <!-- guest -->
+        <a href="#" class=" flex space-x-5 p-3  items-center border-r border-gray-500">
+          <p class="opacity-60 ">Guests</p>
+          <img src="room-img/down-icon.png" alt="">
+        </a>
+        <!-- bed -->
+        <a href="#" class=" flex space-x-5 p-3 items-center ">
+          <p class="opacity-60 ">Bed</p>
+          <img src="room-img/down-icon.png" alt="">
+        </a>
+       </div>
+       <!-- rooms-1 container-->
+       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- room 1 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/deluxe-double.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.5</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-16 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack">
+                Deluxe Double with Mattterhorn View
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N50,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        
+        <!-- room 2 -->
+        
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/standard-single.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.5</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-16 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack">
+                Standard Single Room
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N25,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 3 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/standrad-deluxe.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.5</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-16 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack">
+                Standard Double Room
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N70,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 4 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/superior-double.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.5</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-12 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+               superior double room
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N60,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 5 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/apline-junior.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.5</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-10 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+                alphine junior suite with matterhorn view
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N80,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 6 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/alphine-single.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.5</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-16 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+               single alpine room
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N70,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end of first grid room -->
+       </div>
+       <!-- more room -->
+       <div class="mx-auto text-center py-4" id="more-btn">
+        <div class=" mx-auto tracking-widest w-32 py-3 bg-white
+         rounded-lg hover:bg-darkBrown hover:text-white">
+          More Room
+        </div>
+       </div>
+       <!-- more room container -->
+       <div id="more-room" class="hidden gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- room 1 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/junior-suite.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.9</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-16 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+                junior suite
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N75,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        
+        <!-- room 2 -->
+        
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/triple-room.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.6</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-16 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack">
+               Triple Room
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N80,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 3 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/alphine-junior-suite.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.4</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-16 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack">
+               Alpine Junior Suite
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N85,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 4 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/junior-suite-with-view.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.8</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-12 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+               junior suite with matterhorn view
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N80,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 5 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/family-suite.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.1</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-10 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+                family suite with matterhorn view
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N100,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- room 6 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/luxury-suite.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">4.9</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-10 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+               luxury suite matterhorn view
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N150,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div> 
+        <!-- room 7 -->
+        <div class="flex flex-col items-center">
+          <div class="relative">
+            <img src="room-img/luxury-suite.png" alt="">
+           <div class="absolute bottom-0 right-0 p-5 cursor-pointer">
+            <div class=" rounded-md bg-darkBrown px-3 py-1 flex items-center space-x-2">
+              <p class="text-white font-semibold">5.0</p>
+              <img src="room-img/star-icon.png" class="w-5" alt="">
+             </div>
+           </div>
+          </div>
+          <!-- room context -->
+          <div class="mx-auto bg-white pt-5 pb-3 px-10 w-full">
+            <div class="flex flex-col items-center space-y-5 text-center">
+              <h4 class="font-serif text-2xl text-darkBlack capitalize">
+               alpine loft suite with matterhorn view
+              </h4>
+              <!-- second line -->
+              <div class="flex items-center space-x-10">
+                <!-- cube -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/cube-icon.png" alt="">
+                  <p class="opacity-60">29m <sup>2</sup></p>
+                </div>
+                <!-- person -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/person-icon.png" alt="">
+                  <p class="opacity-60">2 persons</p>
+                </div>
+                <!-- bed -->
+                <div class="flex flex-col items-center space-y-2">
+                  <img src="room-img/bed-icon.png" alt="">
+                  <p class="opacity-60">2 beds</p>
+                </div>
+              </div>
+              <h2 class="opacity-60 text-xl">N250,000/Night</h2>
+              <a href="#" class="px-4 py-2 tracking-widest text-darkBrown border
+               hover:text-white hover:bg-darkBrown border-darkBrown
+                duration-150 transition hover:-translate-y-1.5">
+                SELECT 
+              </a>
+            </div>
+          </div>
+        </div>
+       <!-- end of second room container -->
+     </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="bg-darkBrown">
+      <div class="mx-auto px-8 pt-14 pb-4 text-white">
+        <div class="flex flex-col md:flex-row items-center md:items-start space-y-10 md:space-y-0 md:space-x-28">
+          <!-- logo social and contact -->
+          <div class="flex flex-col space-y-8 items-center md:items-start pb-8">
+            <!-- logo -->
+            <img src="home-img/footer-logo.png" class="w-44"  alt="">
+            <!-- address -->
+            <div class="flex space-x-10">
+              <h4 class="pl-12 md:pl-0">Address</h4>
+              <p class="capitalize">74b the green court estate, lekki, lagos. </p>
+            </div>
+            <!-- phone -->
+            <div class="flex space-x-10">
+              <h4 class="">Phone</h4>
+              <p class="">(+234) 0707 123 4567</p>
+            </div>
+            <!-- email -->
+            <div class="flex space-x-10">
+              <h4 class="">Email</h4>
+              <a href="#">support@hotel.com</a>
+            </div>
+            <div
+            class="flex items-center space-x-10 "
+          >
+            <a
+              href="#"
+              class="ring-2 ring-white rounded-full p-3 px-4 hover:bg-blue-400"
+            >
+              <img src="home-img/facebook-icon.png" class="w-3" alt="" />
+            </a>
+            <a
+              href="#"
+              class="ring-2 ring-white rounded-full p-4 px-4 hover:bg-red-400"
+            >
+              <img src="home-img/instagram-icon.png" class="w-3" alt="" />
+            </a>
+          </div>
+          </div>
+          <!-- menus -->
+          <div class="flex flex-col md:flex-row items-start space-y-10 md:space-y-0 md:space-x-10 pb-14">
+            <!-- home menu -->
+            <div class="flex flex-col items-start space-y-7">
+              <a href="index.html" class="capitalize font-sans font-semibold">
+                home
+              </a>
+              <a href="room.html" class="capitalize font-sans font-semibold">
+                rooms & suites
+              </a>
+              <a href="#" class="capitalize font-sans font-semibold">
+                packages
+              </a>
+              <a href="#" class="capitalize font-sans font-semibold">
+                news
+              </a>
+              <a href="#" class="capitalize font-sans font-semibold">
+                gift voucher
+              </a>
+            </div>
+            <!-- our story menu -->
+            <div class="flex flex-col items-start space-y-7">
+              <a href="index.html" class="capitalize font-sans font-semibold">
+                our story
+              </a>
+              <a href="room.html" class="capitalize font-sans font-semibold">
+                restaurants & bar
+              </a>
+              <a href="#" class="capitalize font-sans font-semibold">
+               meetings & events
+              </a>
+              <a href="#" class="capitalize font-sans font-semibold">
+                gallery
+              </a>
+            </div>
+            <!-- our team menu -->
+            <div class="flex flex-col items-start space-y-7">
+              <a href="index.html" class="capitalize font-sans font-semibold">
+                our team
+              </a>
+              <a href="room.html" class="capitalize font-sans font-semibold">
+                alpine hideaway spa
+              </a>
+              <a href="#" class="capitalize font-sans font-semibold">
+                experience the magic
+              </a>
+              <a href="contact.html" class="capitalize font-sans font-semibold">
+                contact us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pb-4 flex flex-col md:flex-row items-center justify-evenly space-y-7 md:space-y-0">
+         <p class="text-white text-2xl">&copy Micolexy. 2024</p>
+         <div class="flex items-center space-x-10">
+          <a href="#" class="text-xl">
+            Cookies
+          </a>
+          <a href="#" class="text-xl">
+            Privacy Policy
+          </a>
+         </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
